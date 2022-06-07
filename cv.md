@@ -8,7 +8,7 @@ Russian Federation
 
 - email: <gentoosiastic@gmail.com>
 - telegram: <https://t.me/gentoosiast>
-- nickname at RS School discord server: _Sergey Koksharov (@gentoosiast)_
+- nickname at RS School discord server: _gentoosiast#2455_
 
 ## About me
 
