@@ -33,6 +33,10 @@ understand how things work "under the hood".
 
 ## Code examples
 
+```javascript
+const capitalizeWord = (word) => word[0].toUpperCase() + word.slice(1);
+```
+
 - GitHub: <https://github.com/gentoosiast>
 - Codewars: <https://www.codewars.com/users/gentoosiast>
 
