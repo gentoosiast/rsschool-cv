@@ -67,7 +67,7 @@ const capitalizeWord = (word) => word[0].toUpperCase() + word.slice(1);
 
 ## Work experience
 
-TODO: link to this CV
+Project N1 - CV: <https://gentoosiast.github.io/rsschool-cv/cv>
 
 ## Language proficiency
 
