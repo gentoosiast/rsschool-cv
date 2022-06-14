@@ -1,14 +1,3 @@
-/*
-    Позиционирование
-    Блочная модель
-    Типографика
-    Оформление
-    Анимация
-    Разное
-
-    Сгруппированные объявления в правиле отделены друг от друга пустой строкой.
-*/
-
 :root {
   --bg-color: #f7e8ba;
   --main-color: #950581;
@@ -19,7 +8,7 @@
   --links-list-color: #1e73b8;
   --links-list-color-active: #469fe7;
 
-  --main-font: "Times New Roman", "Times", "Baskerville", "Georgia", serif;
+  --main-font: "Open Sans", "Arial", "Helvetica", sans-serif;
   --title-font: "EB Garamond", "Georgia", serif;
   --section-title-font: "Exo", "Arial", "Helvetica", sans-serif;
   --code-snippet-font: "Hack", "Consolas", monotype;
@@ -32,100 +21,112 @@
   }
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: var(--main-font);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
   color: var(--text-color);
   background-color: var(--bg-color);
+}
+
+a {
+  color: var(--links-list-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--links-list-color-active);
+  border-bottom: 1px solid var(--links-list-color-active);
 }
 
 .container {
   width: 60%;
   margin: auto;
-  font-size: 18px;
   background-color: var(--light-color);
-  box-shadow: 0.5em 0.5em 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1rem 1rem 10px rgba(0, 0, 0, 0.5);
 }
 
-header {
+.header {
+  padding-bottom: 0.1rem;
   background-color: var(--main-color);
-  padding-bottom: 0.05em;
-  margin-bottom: 0;
 }
 
-header h1 {
-  padding-top: 1em;
-  margin-bottom: 0;
-  color: var(--light-color);
+.header__title {
+  padding-top: 3rem;
+  margin-bottom: 2rem;
   font-family: var(--title-font);
   text-align: center;
-}
-
-header h2 {
   color: var(--light-color);
-  font-weight: normal;
-  font-size: 1em;
+}
+
+.header__subtitle {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
   text-align: center;
+  color: var(--light-color);
 }
 
-header p {
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-nav {
-  text-align: center;
-  background-color: var(--main-color);
-}
-
-.menu {
+.navigation {
+  padding: 0;
   font-family: var(--section-title-font);
-}
-
-nav ul {
-  margin-top: 0;
-  padding: 0; /* откуда берется отступ в 40px слева?! */
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a,
-nav ul li a:visited {
-  padding: 0 0.5em;
-  color: var(--light-color);
-  background-color: var(--main-color);
   font-weight: bold;
-  text-decoration: none;
+  text-align: center;
+  background-color: var(--main-color);
 }
 
-nav ul li a:hover {
+.navigation li {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.navigation a {
+  padding: 0 0.5rem;
+  color: var(--light-color);
+}
+
+.navigation a:hover {
+  border-bottom: none;
+  text-decoration: none;
+  color: var(--light-color);
   animation: menu-animation 0.5s;
   animation-fill-mode: forwards;
 }
 
 main {
-  margin: 0 1em;
+  width: 90%;
+  margin: auto;
 }
 
 section {
-  margin-bottom: 3em;
+  margin-bottom: 4rem;
 }
 
-section h2 {
-  padding: 0.3em;
-  padding-left: 1em;
+.section__image:hover,
+.footer__image:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.section__emphtext {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.section__title {
+  padding: 1rem;
+  padding-left: 3rem;
   font-family: var(--section-title-font);
   color: var(--light-color);
   background-color: var(--main-color);
 }
 
-/* TODO debug */
 section p {
-  text-indent: 1.5em;
-  line-height: 1.4em;
-  padding: 0 1em;
+  padding: 0 1rem;
+  text-indent: 3rem;
 }
 
 .person {
@@ -133,96 +134,83 @@ section p {
   margin-left: 1em;
 }
 
-
-.emph-text {
-  color: var(--main-color);
-  font-weight: bold;
-}
-
-.item-list {
+.section__items {
   list-style-type: disc;
 }
 
-.item-list li {
-  padding: 0.5em 0;
-}
-
-.item-list > li::marker {
+.section__items > li::marker {
   color: var(--main-color);
 }
 
-.links-list {
+.section__items li {
+  padding: 1rem 0;
+}
+
+.section__links {
   list-style-type: none;
 }
 
-.links-list li {
-  padding: 0.5em 0;
-}
-
-.links-list a,
-.contacts-table a {
-  padding: 0 10px;
-  color: var(--links-list-color);
-  text-decoration: none;
-}
-
-.links-list a:hover,
-.contacts-table a:hover {
-  color: var(--links-list-color-active);
-  border-bottom: 1px solid var(--links-list-color-active);
+.section__links li {
+  padding: 1rem 0;
 }
 
 .code-snippet {
-  padding: 5px 10px;
-  background-color: var(--code-snippet-bg);
+  padding: 0.5rem 1rem;
   font-family: var(--code-snippet-font);
-  font-size: 0.8em;
+  font-size: 1.6rem;
+  background-color: var(--code-snippet-bg);
 }
 
-.project-list section p {
-  text-indent: 0;
-  margin-bottom: 0.5em;
-}
-
-.project-list > li::marker {
-  color: var(--main-color);
+.projects > li::marker {
   font-weight: bold;
+  color: var(--main-color);
 }
 
-.project-list h3 a {
-  color: var(--main-color);
+.project__title a {
   border: none;
   text-decoration: none;
+  color: var(--main-color);
 }
 
-.project-list h3 a:hover {
-  color: var(--main-color-active);
+.project__title a:hover {
   border-bottom: 1px solid var(--main-color-active);
+  color: var(--main-color-active);
+}
+
+.project__techstack {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-indent: 0;
+  color: var(--main-color);
 }
 
 .contacts-table td {
-  padding: 0.3em 1em;
+  padding: 0.5rem 1rem;
 }
 
 .contacts-table td:first-child {
   font-weight: bold;
-  color: var(--main-color);
   text-transform: uppercase;
+  color: var(--main-color);
 }
 
 footer {
+  padding: 1rem 2rem;
   background-color: var(--main-color);
-  padding: 1em 2em;
-  padding-bottom: 0.1em;
 }
 
-footer small {
+.footer__copyright {
+  margin: 0;
   font-size: 0.7em;
   font-weight: bold;
   color: var(--light-color);
 }
 
-footer small a {
+.footer__copyright a {
   color: var(--light-color);
+}
+
+.footer__copyright a:hover {
+  border-bottom-color: var(--light-color);
 }
 
