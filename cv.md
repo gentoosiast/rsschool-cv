@@ -8,7 +8,7 @@ Russian Federation
 
 - email: <gentoosiastic@gmail.com>
 - telegram: <https://t.me/gentoosiast>
-- nickname at RS School discord server: [gentoosiast#2455](https://discordapp.com/users/426036136142569475)
+- nickname at RS School discord server: _gentoosiast#2455_
 
 ## About me
 
@@ -65,22 +65,12 @@ const capitalizeWord = (word) => word[0].toUpperCase() + word.slice(1);
 - [Stepik: Python. Foundations and Usage](https://stepik.org/certificate/60e0510c23eacc93b71471d6faa7635ebeb49d0b.pdf)
 - [Stepik: Introduction to Computer Architecture. Elements of Operating Systems](https://stepik.org/certificate/4703c9d88fb42ab31d13e8ed8a95da1ea11334f4.pdf)
 
-## Work experience & Completed Projects
+## Work experience
 
-1. [Rolling Scopes School: CV](https://gentoosiast.github.io/rsschool-cv/cv)
-
-Applied technologies:
-
-- CSS Animation
-- CSS Box Shadow
-- CSS Pseudo-classes and pseudo-elements
-- CSS Variables
-- Favicon
-- Web fonts
+Project N1 - CV: <https://gentoosiast.github.io/rsschool-cv/cv>
 
 ## Language proficiency
 
-English: [C2](https://www.efset.org/cert/hsDc11). In my spare time I read
-fiction & non-fiction ebooks written in English, watch TV shows with original
-audio tracks, and participate in online discussions to keep my language skills
-sharp and up to date.
+English: B1. In my spare time I read fiction & non-fiction ebooks written in
+English, watch TV shows with original audio tracks, and participate in online
+discussions to keep my language skills sharp and up to date.
