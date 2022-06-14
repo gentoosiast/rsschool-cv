@@ -129,9 +129,8 @@ section p {
   text-indent: 3rem;
 }
 
-.person {
-  filter: blur(10px);
-  margin-left: 1em;
+.myphoto {
+  margin-left: 1rem;
 }
 
 .section__items {
