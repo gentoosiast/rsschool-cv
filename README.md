@@ -1,3 +1,4 @@
-# rsschool-cv
+# Rolling Scopes School: Project 1 - CV
 
-Rolling Scopes School: Project 1 - CV <https://gentoosiast.github.io/rsschool-cv/>
+- [Markdown](https://gentoosiast.github.io/rsschool-cv/cv)
+- [HTML](https://gentoosiast.github.io/rsschool-cv/)
